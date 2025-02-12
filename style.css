@@ -48,6 +48,10 @@ header {
         font-weight: 600;
     }
 
+    a:hover {
+        color: #255311;
+    }
+
     #btn-contact {
         background-color: #040E00;
         color: #D4E6CC;
@@ -56,6 +60,10 @@ header {
         display: flex;
         gap: 0.5rem;
         font-weight: 600;
+    }
+
+    #btn-contact:hover {
+        background-color: #255311;
     }
 
     #logo-name {
@@ -69,6 +77,7 @@ header {
 
 #intro {
     display: flex;
+    justify-content: space-between;
 
     #luna {
         margin-top: 94px;
