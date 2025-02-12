@@ -79,7 +79,7 @@ header {
         display: flex;
         align-items: center;
         margin-inline: 100px;
-        gap: 1rem;
+        gap: 4rem;
     }
 
     #info {
@@ -115,7 +115,98 @@ header {
     }
 }
 
-@media (width <= 1000px) {
+@media (1200px >= width > 768px) {
+    header {
+        padding-inline: 20px;
+        height: 3.375rem;
+
+        #logo-name {
+            height: 15px;
+            margin-right: auto;
+        }
+
+        & nav {
+            display: none;
+        }
+
+        #btn-contact {
+            padding: 6px 12px;
+            font-size: 0.625rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        #icon-mail {
+            height: 15px;
+        }
+
+        #menu {
+            display: block;
+        }
+
+        #menu-mobile {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+    }
+
+    #intro {
+        display: flex;
+    
+        #luna {
+            /* display: none; */
+            height: 20rem;
+            margin-top: 3rem;
+        }
+        
+        #info-profile {
+            margin-top: 3rem;
+            display: flex;
+            align-items: center;
+            margin-inline: 20px;
+            gap: 2rem;
+        }
+    
+        #info {
+            display: grid;
+            row-gap: 0.5rem;
+            max-width: 20.9375rem;
+        }
+    
+        #text {
+            display: grid;
+            row-gap: 0.25rem;
+        }
+    
+        h1 {
+            font-size: 3.375rem;
+        }
+    
+        p {
+            font-size: 0.75rem;
+        }
+    
+        span {
+            font-size: 0.625rem;
+        }
+    
+        #local {
+            gap: 0.125rem;
+            align-items: center;
+        }
+
+        .icon-local {
+            height: 0.625rem;
+        }
+
+        #img-profile {
+            height: 240px;
+        }
+    }
+}
+
+@media (width <= 768px) {
     
     header {
         padding-inline: 20px;
@@ -197,6 +288,10 @@ header {
 
         .icon-local {
             height: 0.625rem;
+        }
+
+        #img-profile {
+            height: 336px;
         }
     }
 }
