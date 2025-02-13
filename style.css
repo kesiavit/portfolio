@@ -22,6 +22,29 @@ body {
     background-color: #F6FFF1;
 }
 
+h2 {
+    font-family: "Audiowide", serif;
+    font-size: 4rem;
+    color: #091F00;
+    line-height: 100%;
+}
+
+.itens {
+    max-width: 456px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.item {
+    color: #E8F5E2;
+    background-color: #64954F;
+    border-radius: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    align-self: center;
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -124,6 +147,40 @@ header {
     }
 }
 
+#trajectory {
+    background-color: #D4E6CC;
+    padding: 4rem 6.25rem;
+    display: grid;
+    row-gap: 4rem;
+
+    #info-trajectory {
+        display: flex;
+        gap: 8rem;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #555555;
+        max-width: 41.625rem;
+    }
+
+    #Skills {
+        display: grid;
+        row-gap: 4rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        color: #255311;
+        font-weight: 800;
+    }
+
+    .skill {
+        display: grid;
+        row-gap: 1rem;
+    }
+}
+
 @media (1200px >= width > 768px) {
     header {
         padding-inline: 20px;
@@ -213,10 +270,24 @@ header {
             height: 240px;
         }
     }
+
 }
 
 @media (width <= 768px) {
     
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .itens {
+        gap: 0.5rem;
+    }
+    
+    .item {
+        font-size: 0.625rem;
+        padding: 0.375rem 0.75rem;
+    }
+
     header {
         padding-inline: 20px;
         height: 3.375rem;
@@ -301,6 +372,35 @@ header {
 
         #img-profile {
             height: 336px;
+        }
+    }
+
+    #trajectory {
+        margin-top: 4rem;
+        padding: 4rem 1.25rem;
+        row-gap: 4rem;
+    
+        #info-trajectory {
+            display: grid;
+            row-gap: 4rem;
+        }
+    
+        p {
+            font-size: 0.625rem;
+        }
+    
+        #Skills {
+            display: grid;
+            row-gap: 2rem;
+        }
+    
+        h3 {
+            font-size: 0.875rem;
+        }
+    
+        .skill {
+            display: grid;
+            row-gap: 0.5rem;
         }
     }
 }
