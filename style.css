@@ -269,6 +269,12 @@ header {
             row-gap: 4rem;
             align-self: flex-start;
         }
+
+        #link-eco {
+            align-items: center;
+            display: flex;
+            gap: 0.25rem;
+        }
     }
 }
 
