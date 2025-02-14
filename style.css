@@ -45,6 +45,16 @@ h2 {
     align-self: center;
 }
 
+a {
+    text-decoration: none;
+    color: #A7CA98;
+    font-size: 1rem;
+}
+
+.link-icon {
+    height: 1rem;
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -181,10 +191,95 @@ header {
     }
 }
 
+#experience {
+    background-color: #141414;
+    display: grid;
+    justify-items: center;
+    padding: 4rem 6.25rem;
+    row-gap: 4rem;
+
+    h2 {
+        font-size: 4rem;
+        color: #E9E9E9;
+    }
+
+    p {
+        color: #B0B0B0;
+        font-size: 1rem;
+        align-self: center;
+    }
+
+    h3 {
+        font-size: 2rem;
+        color: #CACACA;
+        font-weight: 800;
+    }
+
+    small {
+        font-size: 0.75rem;
+        color: #C2DBB7;
+        margin-top: 0.5rem;
+    }
+
+    .item {
+        color: #091F00;
+        background-color: #C2DBB7;
+    }
+
+    #info-experience {
+
+        display: flex;
+        gap: 4rem;
+
+        .slides {
+            display: grid;
+            row-gap: 1rem;
+            justify-items: center;
+        }
+
+        .slide-big {
+            height: 13rem;
+        }
+
+        .slides-mini {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slide-small {
+            height: 3.25rem;
+        }
+
+        .project-experience {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .discretion-experience {
+            display: grid;
+            row-gap: 1rem;
+            max-width: 28.75rem;
+        }
+
+        .skills-experience {
+            margin-left: 2rem;
+            display: grid;
+            row-gap: 4rem;
+            align-self: flex-start;
+        }
+    }
+}
+
 @media (1200px >= width) {
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
     }
     
     .itens {
@@ -314,6 +409,69 @@ header {
         }
     }
 
+    #experience {
+        justify-items: flex-start;
+        display: grid;
+        padding: 4rem 1.25rem;
+        row-gap: 2.5rem;
+
+        small {
+            font-size: 0.5rem;
+        }
+        
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p, a {
+            font-size: 0.625rem;
+        }
+
+        #link-eco {
+            align-items: center;
+            display: flex;
+            gap: 0.25rem;
+        }
+
+        .link-icon {
+            width: 0.625rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+
+        #info-experience {
+    
+            display: flex;
+            gap: 4rem;
+            width: 100%;
+    
+            .slides {
+                justify-items: flex-start;
+            }
+    
+            .project-experience {
+                display: grid;
+                gap: 1rem;
+            }
+    
+            .discretion-experience {
+                display: grid;
+                row-gap: 1rem;
+                max-width: 28.75rem;
+            }
+    
+            .skills-experience {
+                margin-left: 0;
+                margin-top: 2rem;
+                display: grid;
+                row-gap: 1rem;
+                align-self: flex-start;
+            }
+        }
+    }
+
 }
 
 @media (width <= 768px) {
@@ -412,6 +570,18 @@ header {
         #info-trajectory {
             display: grid;
             row-gap: 4rem;
+        }
+    }
+
+    #experience {
+        justify-items: center;
+
+        .project-experience {
+            display: grid;
+        }
+
+        #info-experience {
+            display: grid;
         }
     }
 }
