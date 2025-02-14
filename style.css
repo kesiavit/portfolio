@@ -55,6 +55,10 @@ a {
     height: 1rem;
 }
 
+#img-computer {
+    width: 100%;
+}
+
 header {
     position: fixed;
     width: 100%;
