@@ -181,7 +181,21 @@ header {
     }
 }
 
-@media (1200px >= width > 768px) {
+@media (1200px >= width) {
+
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .itens {
+        gap: 0.5rem;
+    }
+    
+    .item {
+        font-size: 0.625rem;
+        padding: 0.375rem 0.75rem;
+    }
+
     header {
         padding-inline: 20px;
         height: 3.375rem;
@@ -271,22 +285,38 @@ header {
         }
     }
 
+    #trajectory {
+        padding: 4rem 1.25rem;
+        row-gap: 2rem;
+    
+        #info-trajectory {
+            display: flex;
+            gap: 4rem;
+        }
+    
+        p {
+            font-size: 0.625rem;
+            max-width: 24rem;
+        }
+    
+        #Skills {
+            display: grid;
+            row-gap: 2rem;
+        }
+    
+        h3 {
+            font-size: 0.875rem;
+        }
+    
+        .skill {
+            display: grid;
+            row-gap: 0.5rem;
+        }
+    }
+
 }
 
 @media (width <= 768px) {
-    
-    h2 {
-        font-size: 2rem;
-    }
-    
-    .itens {
-        gap: 0.5rem;
-    }
-    
-    .item {
-        font-size: 0.625rem;
-        padding: 0.375rem 0.75rem;
-    }
 
     header {
         padding-inline: 20px;
@@ -377,30 +407,11 @@ header {
 
     #trajectory {
         margin-top: 4rem;
-        padding: 4rem 1.25rem;
         row-gap: 4rem;
     
         #info-trajectory {
             display: grid;
             row-gap: 4rem;
-        }
-    
-        p {
-            font-size: 0.625rem;
-        }
-    
-        #Skills {
-            display: grid;
-            row-gap: 2rem;
-        }
-    
-        h3 {
-            font-size: 0.875rem;
-        }
-    
-        .skill {
-            display: grid;
-            row-gap: 0.5rem;
         }
     }
 }
