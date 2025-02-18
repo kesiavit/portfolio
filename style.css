@@ -539,6 +539,37 @@ header {
         }
     }
 
+    #projects {
+        padding: 4rem 1.25rem;
+        row-gap: 2.5rem;
+    
+        .project {
+            padding: 1.25rem;
+            max-width: 20.875rem;
+            display: grid;
+            row-gap: 2rem;
+        }
+    
+        .info-project {
+            row-gap: 0.5rem;
+        }
+    
+        h3 {
+            font-size: 1.125rem;
+        }
+    
+        p {
+            font-size: 0.625rem;
+        }
+    
+        a {
+            font-size: 0.625rem;
+        }
+    
+        .img-project {
+            height: 10rem;
+        }
+    }
 }
 
 @media (width <= 768px) {
