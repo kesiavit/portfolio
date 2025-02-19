@@ -968,8 +968,8 @@ footer {
         row-gap: 2rem;
     
         #content-footer {
-            display: grid;
-            row-gap: 2rem;
+            display: flex;
+            gap: 4rem;
         }
     
         #list-contact {
@@ -1124,6 +1124,13 @@ footer {
     
         .img-course {
             margin-left: 0;
+        }
+    }
+
+    footer {
+        #content-footer {
+            display: grid;
+            row-gap: 2rem;
         }
     }
 }
