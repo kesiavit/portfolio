@@ -632,6 +632,10 @@ footer {
             cursor: pointer;
         }
 
+        #menu:hover {
+            filter: invert(25%) sepia(35%) saturate(500%) hue-rotate(60deg);
+        }
+
         #menu-mobile {
             display: flex;
             gap: 20px;
@@ -639,7 +643,7 @@ footer {
         }
     }
 
-    #navMobile {
+    /* #navMobile {
         background-color: #D4E6CC;
         position: fixed;
         top: 3.5rem;
@@ -655,6 +659,37 @@ footer {
             color: #091F00;
             font-size: 0.625rem;
             margin-right: 0.5rem;
+        }
+    } */
+
+    #navMobile {
+        background-color: #D4E6CC;
+        position: fixed;
+        top: 3.4rem;
+        display: grid;
+        row-gap: 1rem;
+        padding: 1rem 1.25rem;
+        justify-content: center;
+        width: 12rem;
+        height: 100%;
+        right: 0;
+
+        box-shadow: 0px 2px 4px rgba(9, 31, 0, 0.1);
+
+        a {
+            color: #091F00;
+            font-size: 1rem;
+            margin-right: 1rem;
+        }
+
+        a:hover {
+            color: #255311;
+        }
+
+        #grid-menu {
+            display: grid;
+            row-gap: 1rem;
+            margin-top: 1rem;
         }
     }
 
