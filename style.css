@@ -118,6 +118,10 @@ header {
     }
 }
 
+#navMobile {
+    display: none;
+}
+
 #intro {
     display: flex;
     justify-content: space-between;
@@ -625,6 +629,7 @@ footer {
 
         #menu {
             display: block;
+            cursor: pointer;
         }
 
         #menu-mobile {
@@ -632,6 +637,29 @@ footer {
             gap: 20px;
             align-items: center;
         }
+    }
+
+    #navMobile {
+        background-color: #D4E6CC;
+        position: fixed;
+        top: 3.5rem;
+        display: flex;
+        gap: 1rem;
+        padding: 1.25rem;
+        justify-content: center;
+        width: 100%;
+
+        box-shadow: 0px 2px 4px rgba(9, 31, 0, 0.1);
+
+        a {
+            color: #091F00;
+            font-size: 0.75rem;
+            margin-right: 0.75rem;
+        }
+    }
+
+    #navMobile {
+        display: none;
     }
 
     #intro {
