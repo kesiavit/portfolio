@@ -645,7 +645,7 @@ footer {
         top: 3.5rem;
         display: flex;
         gap: 1rem;
-        padding: 1.25rem;
+        padding: 1rem 1.25rem;
         justify-content: center;
         width: 100%;
 
@@ -653,8 +653,8 @@ footer {
 
         a {
             color: #091F00;
-            font-size: 0.75rem;
-            margin-right: 0.75rem;
+            font-size: 0.625rem;
+            margin-right: 0.5rem;
         }
     }
 
