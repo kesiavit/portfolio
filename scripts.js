@@ -8,9 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (navMobile.style.display === "block") {
             navMobile.style.display = "none";
             overlay.style.display = "none";
+            menuIcon.classList.remove("menu-active");
         } else {
             navMobile.style.display = "block";
             overlay.style.display = "block";
+            menuIcon.classList.add("menu-active");
         }
     }
 
@@ -27,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ) {
             navMobile.style.display = "none";
             overlay.style.display = "none";
+            menuIcon.classList.remove("menu-active");
         }
     });
 
@@ -34,12 +37,14 @@ document.addEventListener("DOMContentLoaded", function () {
         link.addEventListener("click", function () {
             navMobile.style.display = "none";
             overlay.style.display = "none";
+            menuIcon.classList.remove("menu-active");
         });
     });
 
     overlay.addEventListener("click", function () {
         navMobile.style.display = "none";
         overlay.style.display = "none";
+        menuIcon.classList.remove("menu-active");
     });
 });
 
@@ -53,3 +58,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+function copyToClipboard(text, event) {
+    event.preventDefault();
+    navigator.clipboard.writeText(text).then(function() {
+        alert('Texto copiado: ' + text);
+    }, function(err) {
+        console.error('Erro ao copiar: ', err);
+    });
+}
