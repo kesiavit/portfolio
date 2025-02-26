@@ -16,6 +16,8 @@
 
 html {
     position: relative;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -264,6 +266,15 @@ header {
 
         .slide-small {
             height: 3.25rem;
+            cursor: pointer;
+            opacity: 0.6;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .slide-small:hover,
+        .slide-small.active {
+            opacity: 1;
+            transform: scale(1.1);
         }
 
         .project-experience {
@@ -606,6 +617,7 @@ footer {
     header {
         padding-inline: 20px;
         height: 3.375rem;
+        z-index: 10;
 
         #logo-name {
             height: 15px;
@@ -643,24 +655,16 @@ footer {
         }
     }
 
-    /* #navMobile {
-        background-color: #D4E6CC;
+    #overlay {
         position: fixed;
-        top: 3.5rem;
-        display: flex;
-        gap: 1rem;
-        padding: 1rem 1.25rem;
-        justify-content: center;
+        top: 0;
+        left: 0;
         width: 100%;
-
-        box-shadow: 0px 2px 4px rgba(9, 31, 0, 0.1);
-
-        a {
-            color: #091F00;
-            font-size: 0.625rem;
-            margin-right: 0.5rem;
-        }
-    } */
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+        display: none; /* Inicialmente oculto */
+        z-index: 5; /* Deve estar abaixo do menu */
+    }
 
     #navMobile {
         background-color: #D4E6CC;
@@ -673,6 +677,7 @@ footer {
         width: 12rem;
         height: 100%;
         right: 0;
+        z-index: 10;
 
         box-shadow: 0px 2px 4px rgba(9, 31, 0, 0.1);
 
