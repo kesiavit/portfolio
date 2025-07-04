@@ -49,12 +49,17 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const slideBig = document.querySelector(".slide-big");
-    const slideSmall = document.querySelectorAll(".slide-small");
+    
+    const containers = document.querySelectorAll(".slides");
 
-    slideSmall.forEach(slide => {
-        slide.addEventListener("click", function () {
-            slideBig.src = this.src;
+    containers.forEach(container => {
+        const slideBig = container.querySelector(".slide-big");
+        const slideSmall = container.querySelectorAll(".slide-small");
+
+        slideSmall.forEach(slide => {
+            slide.addEventListener("click", function () {
+                slideBig.src = this.src;
+            });
         });
     });
 });

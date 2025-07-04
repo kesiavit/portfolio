@@ -215,6 +215,11 @@ header {
     padding: 4rem 6.25rem;
     row-gap: 4rem;
 
+    #experiences {
+            display: grid;
+            row-gap: 6rem;
+        }
+
     h2 {
         font-size: 4rem;
         color: #E9E9E9;
@@ -244,7 +249,7 @@ header {
         background-color: #C2DBB7;
     }
 
-    #info-experience {
+    .info-experience {
 
         display: flex;
         gap: 4rem;
@@ -316,6 +321,10 @@ header {
         gap: 1.5rem;
         justify-content: center;
         align-items: center;
+    }
+
+    #extension-project{
+        border: 0.25rem solid #7FAC6B;
     }
 
     .project {
@@ -803,6 +812,7 @@ footer {
         padding: 4rem 1.25rem;
         row-gap: 2.5rem;
 
+
         small {
             font-size: 0.5rem;
             margin-bottom: -4rem;
@@ -830,7 +840,7 @@ footer {
             font-size: 1.25rem;
         }
 
-        #info-experience {
+        .info-experience {
     
             display: flex;
             gap: 4rem;
@@ -1187,7 +1197,7 @@ footer {
             display: grid;
         }
 
-        #info-experience {
+        .info-experience {
             display: grid;
         }
 
