@@ -257,6 +257,7 @@ header {
 
         display: flex;
         gap: 4rem;
+        align-items: flex-start;
 
         .slides {
             display: grid;
@@ -620,6 +621,10 @@ footer {
 
     h3 {
         font-size: 1.25rem;
+    }
+
+    p {
+        line-height: 160%;
     }
     
     .itens {
