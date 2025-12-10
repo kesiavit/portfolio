@@ -67,6 +67,10 @@ a {
     gap: 0.25rem;
 }
 
+p {
+    line-height: 160%;
+}
+
 header {
     position: fixed;
     width: 100%;
@@ -187,7 +191,7 @@ header {
 
     p {
         font-size: 1rem;
-        color: #555555;
+        color: #000000;
         max-width: 41.625rem;
     }
 
@@ -348,12 +352,12 @@ header {
     }
 
     p {
-        font-size: 0.75rem;
+        font-size: 1rem;
         color: #B0B0B0;
     }
 
     a {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 
     .img-project {
@@ -623,7 +627,7 @@ footer {
     }
     
     .item {
-        font-size: 0.625rem;
+        font-size: 0.85rem;
         padding: 0.375rem 0.75rem;
     }
 
@@ -787,7 +791,7 @@ footer {
         }
     
         p {
-            font-size: 0.625rem;
+            font-size: 0.85rem;
             max-width: 24rem;
         }
     
@@ -823,7 +827,7 @@ footer {
         }
 
         p, a {
-            font-size: 0.625rem;
+            font-size: 0.85rem;
         }
 
         .link {
@@ -891,11 +895,11 @@ footer {
         }
     
         p {
-            font-size: 0.625rem;
+            font-size: 0.85rem;
         }
     
         a {
-            font-size: 0.625rem;
+            font-size: 0.85rem;
         }
     
         .img-project {
@@ -1034,15 +1038,15 @@ footer {
         }
     
         span {
-            font-size: 0.5rem;
+            font-size: 0.75rem;
         }
     
         p {
-            font-size: 0.75rem;
+            font-size: 0.85rem;
         }
 
         a {
-            font-size: 0.75rem;
+            font-size: 0.85rem;
             display: flex;
             align-items: center;
             gap: 0.25rem;
@@ -1072,13 +1076,13 @@ footer {
         }
     
         p {
-            font-size: 0.625rem;
+            font-size: 0.85rem;
             max-width: 20.875rem;
             line-height: 170%;
         }
     
         small {
-            font-size: 0.5rem;
+            font-size: 0.75rem;
         }
     
         a {
