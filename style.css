@@ -307,6 +307,10 @@ header {
             row-gap: 4rem;
             align-self: flex-start;
         }
+
+        .job-position {
+            color: #C2DBB7;
+        }
     }
 }
 
